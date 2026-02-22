@@ -3,24 +3,6 @@ let conta3 = document.querySelector('.conta3')
 let conta2 = document.querySelector('.conta2')
 let conta = document.querySelector('.conta')
 
-let porcentagem = '%'
-let dividir = '/'
-let sete = '7'
-let oito = '8'
-let nove = '9'
-let vezes = '*'
-let quatro = '4'
-let cinco = '5'
-let seis = '6'
-let menos = '-'
-let um = '1'
-let dois = '2'
-let tres = '3'
-let zero = '0'
-let mais = '+'
-let ponto = '.'
-let igual = '='
-
 let calculo = ''
 let calculo2 = ''
 let calculo3 = ''
@@ -58,99 +40,99 @@ function Fdeletar(){
 
 function Fporcentagem(){
     verificarZero()
-    conta.innerHTML += porcentagem
+    conta.innerHTML += "%"
     calculo += '/100'
 }
 
 function Fdividir(){
     verificarZero()
-    conta.innerHTML += dividir
-    calculo += dividir
+    conta.innerHTML += "/"
+    calculo += "/"
 }
 
 function Fsete(){
     verificarZero()
-    conta.innerHTML += sete
-    calculo += sete
+    conta.innerHTML += 7
+    calculo += 7
 }
 
 function Foito(){
     verificarZero()
-    conta.innerHTML += oito
-    calculo += oito
+    conta.innerHTML += 8
+    calculo += 8
 }
 
 function Fnove(){
     verificarZero()
-    conta.innerHTML += nove
-    calculo += nove
+    conta.innerHTML += 9
+    calculo += 9
 }
 
 function Fvezes(){
     verificarZero()
     conta.innerHTML += 'x'
-    calculo += vezes
+    calculo += "*"
 }
 
 function Fquatro(){
     verificarZero()
-    conta.innerHTML += quatro
-    calculo += quatro
+    conta.innerHTML += 4
+    calculo += 4
 }
 
 function Fcinco(){
     verificarZero()
-    conta.innerHTML += cinco
-    calculo += cinco
+    conta.innerHTML += 5
+    calculo += 5
 }
 
 function Fseis(){
     verificarZero()
-    conta.innerHTML += seis
-    calculo += seis
+    conta.innerHTML += 6
+    calculo += 6
 }
 
 function Fmenos(){
     verificarZero()
-    conta.innerHTML += menos
-    calculo += menos
+    conta.innerHTML += "-"
+    calculo += "-"
 }
 
 
 function Fum(){
     verificarZero()
-    conta.innerHTML += um
-    calculo += um
+    conta.innerHTML += 1
+    calculo += 1
 }
 
 function Fdois(){
     verificarZero()
-    conta.innerHTML += dois
-    calculo += dois
+    conta.innerHTML += 2
+    calculo += 2
 }
 
 function Ftres(){
     verificarZero()
-    conta.innerHTML += tres
-    calculo += tres
+    conta.innerHTML += 3
+    calculo += 3
 }
 
 function Fmais(){
     verificarZero()
-    conta.innerHTML += mais
-    calculo += mais
+    conta.innerHTML += "+"
+    calculo += "+"
 }
 
 function Fzero(){
     verificarZero()
-    conta. innerHTML += zero
-    calculo += zero
+    conta. innerHTML += 0
+    calculo += 0
 }
 
 function Fponto(){
     verificarZero()
-    conta.innerHTML += ponto
-    calculo += ponto
+    conta.innerHTML += "."
+    calculo += "."
 }
 
 function Figual(){
