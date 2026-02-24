@@ -49,108 +49,14 @@ function Fdeletar() {
   }
 }
 
-// Porcentagem (%)
-function Fporcentagem() {
+function adicionar(valorInterno, valorVisivel = valorInterno) {
   verificarZero();
-  conta.innerHTML += "%";
-  calculo += "/100"; // transforma % em /100 para o JS entender
-}
 
-// Divisão
-function Fdividir() {
-  verificarZero();
-  conta.innerHTML += "/";
-  calculo += "/";
-}
+  // Mostra no visor
+  conta.innerHTML += valorVisivel;
 
-// Números (cada função adiciona número no visor e no cálculo)
-function Fsete() {
-  verificarZero();
-  conta.innerHTML += 7;
-  calculo += 7;
-}
-
-function Foito() {
-  verificarZero();
-  conta.innerHTML += 8;
-  calculo += 8;
-}
-
-function Fnove() {
-  verificarZero();
-  conta.innerHTML += 9;
-  calculo += 9;
-}
-
-// Multiplicação (mostra x mas usa * internamente)
-function Fvezes() {
-  verificarZero();
-  conta.innerHTML += "x";
-  calculo += "*";
-}
-
-function Fquatro() {
-  verificarZero();
-  conta.innerHTML += 4;
-  calculo += 4;
-}
-
-function Fcinco() {
-  verificarZero();
-  conta.innerHTML += 5;
-  calculo += 5;
-}
-
-function Fseis() {
-  verificarZero();
-  conta.innerHTML += 6;
-  calculo += 6;
-}
-
-// Subtração
-function Fmenos() {
-  verificarZero();
-  conta.innerHTML += "-";
-  calculo += "-";
-}
-
-function Fum() {
-  verificarZero();
-  conta.innerHTML += 1;
-  calculo += 1;
-}
-
-function Fdois() {
-  verificarZero();
-  conta.innerHTML += 2;
-  calculo += 2;
-}
-
-function Ftres() {
-  verificarZero();
-  conta.innerHTML += 3;
-  calculo += 3;
-}
-
-// Soma
-function Fmais() {
-  verificarZero();
-  conta.innerHTML += "+";
-  calculo += "+";
-}
-
-// Zero
-function Fzero() {
-  verificarZero();
-  conta.innerHTML += 0;
-  calculo += 0;
-}
-
-// Ponto decimal
-function Fponto() {
-  verificarZero();
-  conta.innerHTML += ".";
-  calculo += ".";
+  // Guarda para cálculo
+  calculo += valorInterno;
 }
 
 // =========================

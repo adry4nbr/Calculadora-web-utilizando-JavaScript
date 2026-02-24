@@ -35,40 +35,40 @@
             <i class="fas fa-backspace"></i>
             <!-- Ícone de apagar -->
           </button>
-          <input type="button" value="%" onclick="Fporcentagem()" />
+          <input type="button" value="%" onclick="adicionar('/100', '%')" />
           <!-- Porcentagem -->
-          <input type="button" value="/" onclick="Fdividir()" />
+          <input type="button" value="/" onclick="adicionar('/')" />
           <!-- Divisão -->
         </div>
 
         <!-- Linha 2: números 7, 8, 9 e multiplicação -->
         <div class="container">
-          <input type="button" value="7" onclick="Fsete()" />
-          <input type="button" value="8" onclick="Foito()" />
-          <input type="button" value="9" onclick="Fnove()" />
-          <input type="button" value="x" onclick="Fvezes()" />
+          <input type="button" value="7" onclick="adicionar('7')" />
+          <input type="button" value="8" onclick="adicionar('8')" />
+          <input type="button" value="9" onclick="adicionar('9')" />
+          <input type="button" value="x" onclick="adicionar('*', 'x')" />
         </div>
 
         <!-- Linha 3: números 4, 5, 6 e subtração -->
         <div class="container">
-          <input type="button" value="4" onclick="Fquatro()" />
-          <input type="button" value="5" onclick="Fcinco()" />
-          <input type="button" value="6" onclick="Fseis()" />
-          <input type="button" value="-" onclick="Fmenos()" />
+          <input type="button" value="4" onclick="adicionar('4')" />
+          <input type="button" value="5" onclick="adicionar('5')" />
+          <input type="button" value="6" onclick="adicionar('6')" />
+          <input type="button" value="-" onclick="adicionar('-')" />
         </div>
 
         <!-- Linha 4: números 1, 2, 3 e soma -->
         <div class="container">
-          <input type="button" value="1" onclick="Fum()" />
-          <input type="button" value="2" onclick="Fdois()" />
-          <input type="button" value="3" onclick="Ftres()" />
-          <input type="button" value="+" onclick="Fmais()" />
+          <input type="button" value="1" onclick="adicionar('1')" />
+          <input type="button" value="2" onclick="adicionar('2')" />
+          <input type="button" value="3" onclick="adicionar('3')" />
+          <input type="button" value="+" onclick="adicionar('+')" />
         </div>
 
         <!-- Linha 5: número 0, ponto decimal e botão de igual -->
         <div class="container">
-          <input type="button" value="0" onclick="Fzero()" />
-          <input type="button" value="." onclick="Fponto()" />
+          <input type="button" value="0" onclick="adicionar('0')" />
+          <input type="button" value="." onclick="adicionar('.')" />
           <input type="button" value="=" id="igual" onclick="Figual()" />
           <!-- Calcula o resultado -->
         </div>
