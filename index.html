@@ -1,57 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importa o ícone de deletar-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <h1>Calculadora</h1>
     <section>
-        <div class="resultado">
-            <!-- Serião os resultados -->
-            <div class="conta4" onclick="chamarconta4()"></div>
-            <div class="conta3" onclick="chamarconta3()"></div>
-            <div class="conta2" onclick="chamarconta2()"></div> 
+      <!-- Área onde os resultados e histórico aparecem -->
+      <div class="resultado">
+        <!-- Divs que mostram contas anteriores (histórico) -->
+        <div class="conta4" onclick="chamarconta4()"></div>
+        <div class="conta3" onclick="chamarconta3()"></div>
+        <div class="conta2" onclick="chamarconta2()"></div>
 
-            <div class="conta">0</div>
+        <!-- Div principal onde aparece o número atual -->
+        <div class="conta">0</div>
+      </div>
+
+      <!-- Área dos botões da calculadora -->
+      <div class="calculo">
+        <!-- Linha 1: limpar, apagar, porcentagem e divisão -->
+        <div class="container">
+          <input type="button" value="C" onclick="Fcancelar()" />
+          <!-- Limpa tudo -->
+          <button onclick="Fdeletar()">
+            <i class="fas fa-backspace"></i>
+            <!-- Ícone de apagar -->
+          </button>
+          <input type="button" value="%" onclick="Fporcentagem()" />
+          <!-- Porcentagem -->
+          <input type="button" value="/" onclick="Fdividir()" />
+          <!-- Divisão -->
         </div>
-        <div class="calculo">
-            <div class="container">
-                <input type="button" value="C" onclick="Fcancelar()">
-                <button onclick="Fdeletar()"><i class="fas fa-backspace"></i></button>
-                <input type="button" value="%"  onclick="Fporcentagem()">
-                <input type="button" value="/"  onclick="Fdividir()">
-            </div>
-            <div class="container">
-                <input type="button" value="7"  onclick="Fsete()">
-                <input type="button" value="8"  onclick="Foito()">
-                <input type="button" value="9"  onclick="Fnove()">
-                <input type="button" value="x"  onclick="Fvezes()">
-            </div>
-            <div class="container">
-                <input type="button" value="4"  onclick="Fquatro()">
-                <input type="button" value="5"  onclick="Fcinco()">
-                <input type="button" value="6"  onclick="Fseis()">
-                <input type="button" value="-"  onclick="Fmenos()">
-            </div>
-            <div class="container">
-                <input type="button" value="1"  onclick="Fum()">
-                <input type="button" value="2"  onclick="Fdois()">
-                <input type="button" value="3"  onclick="Ftres()">
-                <input type="button" value="+"  onclick="Fmais()">
-            </div>
-            <div class="container">
-                <input type="button" value="0"  onclick="Fzero()">
-                <input type="button" value="."  onclick="Fponto()">
-                <input type="button" value="=" id="igual" onclick="Figual()">
-                
-            </div>
+
+        <!-- Linha 2: números 7, 8, 9 e multiplicação -->
+        <div class="container">
+          <input type="button" value="7" onclick="Fsete()" />
+          <input type="button" value="8" onclick="Foito()" />
+          <input type="button" value="9" onclick="Fnove()" />
+          <input type="button" value="x" onclick="Fvezes()" />
         </div>
+
+        <!-- Linha 3: números 4, 5, 6 e subtração -->
+        <div class="container">
+          <input type="button" value="4" onclick="Fquatro()" />
+          <input type="button" value="5" onclick="Fcinco()" />
+          <input type="button" value="6" onclick="Fseis()" />
+          <input type="button" value="-" onclick="Fmenos()" />
+        </div>
+
+        <!-- Linha 4: números 1, 2, 3 e soma -->
+        <div class="container">
+          <input type="button" value="1" onclick="Fum()" />
+          <input type="button" value="2" onclick="Fdois()" />
+          <input type="button" value="3" onclick="Ftres()" />
+          <input type="button" value="+" onclick="Fmais()" />
+        </div>
+
+        <!-- Linha 5: número 0, ponto decimal e botão de igual -->
+        <div class="container">
+          <input type="button" value="0" onclick="Fzero()" />
+          <input type="button" value="." onclick="Fponto()" />
+          <input type="button" value="=" id="igual" onclick="Figual()" />
+          <!-- Calcula o resultado -->
+        </div>
+      </div>
     </section>
 
+    <!-- Importa o arquivo JavaScript com as funções da calculadora -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

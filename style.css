@@ -1,66 +1,86 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 183, 255);
-    flex-direction: column;
+/* Estilização para zerar os do navegador */
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-section{
-    width: 500px;
-    height: 600px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.421);
+/* Estilização geral do corpo da página */
+body {
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  background-color: rgb(0, 183, 255); /* Cor de fundo da página */
+  flex-direction: column; /* Organiza os elementos em coluna */
 }
 
-.resultado{
-    width: 100%;
-    height: 135px;
-    border-radius:10px 10px 0 0;
+/* Estilização da calculadora (bloco principal) */
+section {
+  width: 500px; /* Largura fixa */
+  height: 600px; /* Altura fixa */
+  background-color: black; /* Fundo preto */
+  color: white; /* Cor padrão do texto */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.421); /* Sombra para dar efeito de profundidade */
 }
 
-.calculo{
-    width: 100%;
-    height: 465px;
+/* Área onde ficam os resultados e histórico */
+.resultado {
+  width: 100%; /* Ocupa toda a largura */
+  height: 135px; /* Altura da área de resultado */
+  border-radius: 10px 10px 0 0; /* Arredonda apenas a parte superior */
 }
 
-.container{
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+/* Área onde ficam os botões */
+.calculo {
+  width: 100%; /* Largura total */
+  height: 465px; /* Altura restante da calculadora */
 }
 
-input, button{
-    margin: 10px;
-    height: 70px;
-    width: 100px;
-    font-size: 20px;
-    border-radius: 20px;
+/* Cada linha de botões */
+.container {
+  display: flex; /* Flexbox para alinhar botões */
+  width: 100%; /* Largura total */
+  height: auto; /* Altura automática */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
 
-input:hover, button:hover{
-    transform:scale(1.1);
-    transition: 0.5s;
+/* Estilização geral dos botões */
+input,
+button {
+  margin: 10px; /* Espaçamento entre botões */
+  height: 70px; /* Altura do botão */
+  width: 100px; /* Largura do botão */
+  font-size: 20px; /* Tamanho do texto */
+  border-radius: 20px; /* Botões arredondados */
 }
 
-#igual{
-    width: 44%;
+/* Efeito quando passa o mouse sobre os botões */
+input:hover,
+button:hover {
+  transform: scale(1.1); /* Aumenta o tamanho levemente */
+  transition: 0.5s; /* Tempo da animação */
 }
 
-.conta2, .conta3, .conta4{
-    width: 95%;
-    text-align: right;
-    margin: 8px;
-    font-size: 18px;
-    color: rgb(131, 125, 125);
+/* Botão de igual com largura maior */
+#igual {
+  width: 44%;
 }
 
-.conta{
-    width: 95%;
-    text-align: right;
-    font-size: 48px;
+/* Histórico de contas anteriores */
+.conta2,
+.conta3,
+.conta4 {
+  width: 95%;
+  text-align: right; /* Alinha o texto à direita */
+  margin: 8px; /* Espaçamento externo */
+  font-size: 18px;
+  color: rgb(131, 125, 125);
+}
+
+/* Resultado atual da calculadora */
+.conta {
+  width: 95%;
+  text-align: right; /* Alinha à direita */
+  font-size: 48px;
 }
